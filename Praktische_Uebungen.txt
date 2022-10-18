@@ -1,0 +1,55 @@
+Familie. Die Familie besteht aus Menschen. Ein Mensch hat einen Vorname, Familienamen, alter, kann einen Kind (Mensch) haben, kann einen Ehepartner(Mensch) haben. 
+Ein Mensch kann heiraten. Ein mensch kann älter werden.
+
+
+class Mensch{
+	String vorname;
+	String familienname;
+	int alter;
+	Mensch kind;
+	Mensch ehepartner;
+	
+	
+}
+
+1. Was sind die Felder von Mensch?
+2. Was sind die Methoden von Mensch?
+3. Was ist der State von Mensch?
+
+
+_______________________________________
+
+Olegs Klujs 19 ist verheiratet mit Özlem Klujs 18, kein Kind.
+
+Mensch olegs=new Mensch();
+olegs.vorname="Olegs";
+olegs.familienname="Klujs";
+olegs.alter=19;
+
+
+{
+	vorname: Oleg,
+	familiename: Klujs,
+	alter: 19,
+	kind: null,
+	ehepartner: null,
+	verheiratet: false 
+}
+
+heiraten .....
+
+{
+	vorname: Oleg,
+	familiename: Klujs,
+	alter: 19,
+	kind: null,
+	ehepartner: {
+		vorname: Oezlem,
+		familiename: Klujs,
+		alter: 18,
+		kind: null,
+		ehepartner: null,
+		verheiratet: false 
+	},
+	verheiratet: false 
+}
